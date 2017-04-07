@@ -1,0 +1,44 @@
+以下code在matlab的command window中輸入
+
+[注意] 以下程式碼供參考，function所需變數的名字是我自己取的，
+      所以如果用以下程式碼直接輸入會產生錯誤（變數未定義），
+      對於function以及所需的變數介紹有附上參考網址
+
+     
+kmeans
+==========
+
+[IDX1,C1,sumd1,D1]=kmeans(training_km_v68,50,'dist','sqEuclidean','rep',50)
+[IDX1,C1,sumd1,D1]=kmeans(training_km_v68,100,'dist','sqEuclidean','rep',100)
+[IDX1,C1,sumd1,D1]=kmeans(training_km_v68,300,'dist','sqEuclidean','rep',300)
+
+-關於matlab的kmeans可以參考：
+ http://www.mathworks.com/help/stats/kmeans.html
+
+classification tree
+===========
+
+v50_var = transpose(var_v50)
+output_tree = transpose(untitled)
+tree = ClassificationTree.fit(v50_var,output_tree)
+view(tree)
+view(tree,'mode','graph')
+v100_var = transpose(var_v100)
+tree_v100 = ClassificationTree.fit(v100_var,output_tree)
+view(tree_v100)
+view(tree_v100,'mode','graph')
+v150_var = transpose(var_v150)
+tree_v150 = ClassificationTree.fit(v150_var,output_tree)
+view(tree_v150)
+view(tree_v150,'mode','graph')
+view(tree)
+v300_var = transpose(var_v300)
+tree_v300 = ClassificationTree.fit(v300_var,output_tree)
+view(tree_v300)
+view(tree_v300,'mode','graph')
+view(tree,'mode','graph')
+view(tree_v100,'mode','graph')
+view(tree_v300,'mode','graph')
+
+-關於matlab的classification tree可以參考：
+ http://www.mathworks.com/help/stats/classificationtreeclass.html

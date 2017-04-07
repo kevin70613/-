@@ -1,0 +1,25 @@
+-- matlab nntoolbox --
+在matlab command window中依序輸入以下程式碼: 
+//nntool會開起matlab所提供的toolbox
+nntool
+network_v50.plotFcns = {'plotperform','plottrainstate','ploterrhist','plotconfusion','plotregression', 'plotfit'};
+network_v50.divideFcn = 'divideblock';
+network_v50.divideMode = 'sample';
+network_v50.plotFcns = {'plotperform','plottrainstate','ploterrhist','plotconfusion','plotregression', 'plotfit'};
+network_v50.divideFcn = 'divideblock';
+network_v50.divideMode = 'sample';
+network_v50.divideParam.trainRatio = 70/100;
+network_v50.divideParam.valRatio = 15/100;
+network_v50.divideParam.testRatio = 15/100;
+network_v100.plotFcns = {'plotperform','plottrainstate','ploterrhist','plotconfusion','plotregression', 'plotfit'};
+network_v100.divideFcn = 'divideblock';
+network_v100.divideMode = 'sample';
+network_v100.divideParam.trainRatio = 70/100;
+network_v100.divideParam.valRatio = 15/100;
+network_v100.divideParam.testRatio = 15/100;
+network_v300.plotFcns = {'plotperform','plottrainstate','ploterrhist','plotconfusion','plotregression', 'plotfit'};
+network_v300.divideFcn = 'divideblock';
+network_v300.divideMode = 'sample';
+network_v300.divideParam.trainRatio = 70/100;
+network_v300.divideParam.valRatio = 15/100;
+network_v300.divideParam.testRatio = 15/100;
